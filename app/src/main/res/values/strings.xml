@@ -20,4 +20,16 @@
     <string name="enter_string">Enter</string>
     <string name="enter_text_here_string">Enter Text Here</string>
 
+    <!-- Week 3 - Permissions -->
+    <string name="permissions_title_main">PermissionsLab</string>
+    <string name="start_bookmarks_button">Bookmarks Activity</string>
+    <string name="title_permissions">Permissions</string>
+    <string name="get_bookmarks">Get Bookmarks</string>
+    <string name="get_dangerous_activity">Go To Dangerous Activity</string>
+    <string name="place_holder">Bookmarks Go Here</string>
+    <string name="title_activity_customization">Customization</string>
+    <string name="start_dangerous_activity">Start Dangerous Activity</string>
+    <string name="customised_message">This button will load a Dangerous Level activity</string>
+    <string name="dangerous_activity_text">Dangerous!!</string>
+
 </resources>
