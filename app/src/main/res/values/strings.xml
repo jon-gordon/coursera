@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Coursera</string>
 
+    <!-- Week 2 -->
     <string name="onCreate">onCreate() calls: 0</string>
     <string name="onStart">onStart() calls: 0</string>
     <string name="onResume">onResume() calls: 0</string>
@@ -8,5 +9,15 @@
     <string name="button">Start Activity Two</string>
     <string name="title_activity_activity_two">Activity Two</string>
     <string name="close">Close Activity</string>
+
+    <!-- Week 3 - Intents -->
+    <string name="title_explicit">Explicit Activation</string>
+    <string name="title_main">Activity Loader Activity</string>
+    <string name="explicit_message">You have sent an Explicit Intent!</string>
+    <string name="explicit_activation_button_string">Explicit Activation</string>
+    <string name="implicit_activation_button_string">Implicit Activation</string>
+    <string name="no_text_entered">No Text Entered...</string>
+    <string name="enter_string">Enter</string>
+    <string name="enter_text_here_string">Enter Text Here</string>
 
 </resources>
