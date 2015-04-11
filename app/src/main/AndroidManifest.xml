@@ -1,6 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jongor_software.android.learning.coursera">
 
+    <!-- Using a permission element,
+         define a custom permission with name
+         ".PMAAHS1.Week3.Permissions.DANGEROUS_ACTIVITY_PERM"
+         and "dangerous" protection level. -->
+    <permission android:name=".PMAAHS1.Week3.Permissions.DANGEROUS_ACTIVITY_PERM"
+        android:protectionLevel="dangerous"
+        android:description="@string/dangerous_permission_description"
+        android:label="@string/dangerous_permission_label" />
+
     <!-- Add uses-permission elements -->
     <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
 
@@ -9,38 +18,37 @@
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".PMAAHS1.Week2.ActivityOne"></activity>
-        <activity android:name=".PMAAHS1.Week2.ActivityTwo"></activity>
+        <activity android:name=".PMAAHS1.Week2.ActivityOne" />
+        <activity android:name=".PMAAHS1.Week2.ActivityTwo" />
 
-        <activity android:name=".PMAAHS1.Week3.Intents.ActivityLoaderActivity"></activity>
-        <activity android:name=".PMAAHS1.Week3.Intents.ExplicitlyLoadedActivity"></activity>
+        <activity android:name=".PMAAHS1.Week3.Intents.ActivityLoaderActivity" />
+        <activity android:name=".PMAAHS1.Week3.Intents.ExplicitlyLoadedActivity" />
         <activity android:name=".PMAAHS1.Week3.Intents.MyBrowserActivity">
             <!-- Add necessary intent filter information so that this Activity will accept
                  Intents with the action "android.intent.action.VIEW" and with a "http" schemed
                  URL -->
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-                <category android:name="android.intent.category.BROWSABLE"></category>
-                <data android:scheme="http"></data>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".PMAAHS1.Week3.Permissions.ActivityLoaderActivity"></activity>
-        <activity android:name=".PMAAHS1.Week3.Permissions.BookmarksActivity"></activity>
-        <activity android:name=".PMAAHS1.Week3.Permissions.DangerousActivityLoaderActivity"></activity>
+        <activity android:name=".PMAAHS1.Week3.Permissions.ActivityLoaderActivity" />
+        <activity android:name=".PMAAHS1.Week3.Permissions.BookmarksActivity" />
+        <activity android:name=".PMAAHS1.Week3.Permissions.DangerousActivityLoaderActivity" />
         <activity android:name=".PMAAHS1.Week3.Permissions.DangerousActivity">
-            <!-- TODO
-                 Using a permission element,
-                 define a custom permission with name
-                 ".PMAAHS1.Week3.Permissions.DANGEROUS_ACTIVITY_PERM"
-                 and "dangerous" protection level. -->
-
-            <!-- TODO
-                 Add additional intent filter info so that this Activity
+            <!-- Add additional intent filter info so that this Activity
                  will respond to an Implicit Intent with the action
                  ".PMAAHS1.Week3.Permissions.DANGEROUS_ACTIVITY" -->
+            <intent-filter>
+                <action android:name=".PMAAHS1.Week3.Permissions.DANGEROUS_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
+        <activity android:name=".PMAAHS1.Week3.Fragments.MainActivity" />
 
     </application>
 

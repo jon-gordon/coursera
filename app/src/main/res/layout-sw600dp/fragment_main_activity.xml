@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
+
+    <fragment android:id="@+id/friends_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.jongor_software.android.learning.coursera.PMAAHS1.Week3.Fragments.FriendsFragment" />
+
+    <fragment android:id="@+id/feed_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        class="com.jongor_software.android.learning.coursera.PMAAHS1.Week3.Fragments.FeedFragment" />
+
+</LinearLayout>

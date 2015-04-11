@@ -31,5 +31,10 @@
     <string name="start_dangerous_activity">Start Dangerous Activity</string>
     <string name="customised_message">This button will load a Dangerous Level activity</string>
     <string name="dangerous_activity_text">Dangerous!!</string>
+    <string name="dangerous_permission_label">Dangerous Action</string>
+    <string name="dangerous_permission_description">This action will invoke a dangerous application</string>
+
+    <!-- Week 3 - Fragments -->
+    <string name="greeting">Select a feed to view!</string>
 
 </resources>
