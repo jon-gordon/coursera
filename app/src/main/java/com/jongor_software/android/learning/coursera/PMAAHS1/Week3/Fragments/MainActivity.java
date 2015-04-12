@@ -13,8 +13,11 @@ public class MainActivity extends FragmentActivity implements FriendsFragment.Se
 
     private static final String TAG = "Lab-Fragments";
 
+    private static final String CURRENT_FEED = "current feed";
+
     private FriendsFragment mFriendsFragment;
     private FeedFragment mFeedFragment;
+    private int mCurrentPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,12 @@ public class MainActivity extends FragmentActivity implements FriendsFragment.Se
         else {
             // Otherwise, save a reference to the FeedFragment for later use
             mFeedFragment = (FeedFragment) getSupportFragmentManager().findFragmentById(R.id.feed_fragment);
+        }
+
+        // If restore data available, re-select previous feed
+        if (savedInstanceState != null) {
+            mCurrentPosition = savedInstanceState.getInt(CURRENT_FEED);
+            mFeedFragment.updateFeedDisplay(mCurrentPosition);
         }
     }
 
@@ -60,6 +69,15 @@ public class MainActivity extends FragmentActivity implements FriendsFragment.Se
 
         // Udpate Twitter feed display on FriendFragment
         mFeedFragment.updateFeedDisplay(position);
+
+        // Save position
+        mCurrentPosition = position;
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt(CURRENT_FEED, mCurrentPosition);
+        super.onSaveInstanceState(outState);
     }
 
     // If there is no fragment_container ID, then the application is in two-pane mode

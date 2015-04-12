@@ -21,7 +21,7 @@ public class FriendsFragment extends ListFragment {
     private static final String[] FRIENDS = { "ladygaga", "msrebeccablack", "taylorswift13" };
 
     public interface SelectionListener {
-        public void onItemSelected(int position);
+        void onItemSelected(int position);
     }
 
     private SelectionListener mCallback;
