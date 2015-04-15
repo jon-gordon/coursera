@@ -50,6 +50,10 @@
 
         <activity android:name=".PMAAHS1.Week3.Fragments.MainActivity" />
 
+
+        <activity android:name=".PMAAHS1.Week4.UI.ToDoManagerActivity" />
+        <activity android:name=".PMAAHS1.Week4.UI.AddToDoItemActivity" />
+
     </application>
 
 </manifest>
