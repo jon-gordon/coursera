@@ -3,11 +3,13 @@ package com.jongor_software.android.learning.coursera.PMAAHS1.Week4.UI;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.jongor_software.android.learning.coursera.PMAAHS1.Week4.UI.ToDoItem.Priority;
@@ -29,7 +31,7 @@ import java.util.Date;
 /**
  * Created by Jon on 12/04/2015.
  */
-public class ToDoManagerActivity extends ListActivity {
+public class ToDoManagerActivity extends ActionBarActivity {
 
     private static final String TAG = "Lab-UserInterface";
 
@@ -41,22 +43,25 @@ public class ToDoManagerActivity extends ListActivity {
     private static final int MENU_DUMP = MENU_DELETE + 1;
 
     ToDoListAdapter mToDoListAdapter;
+    ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.list_view);
+        mListView = (ListView) findViewById(R.id.listview);
 
         // Create a new ToDoListAdapter for this ListActivity's ListView
         mToDoListAdapter = new ToDoListAdapter(getApplicationContext());
 
         // Put divider between ToDoItems and FooterView
-        getListView().setFooterDividersEnabled(true);
+        mListView.setFooterDividersEnabled(true);
 
         // Inflate footerView for footer_view.xml file
         TextView footerView = (TextView) getLayoutInflater().inflate(R.layout.footer_view, null);
 
         // Add footerView to ListView
-        getListView().addFooterView(footerView);
+        mListView.addFooterView(footerView);
 
         // Attach Listener to FooterView
         footerView.setOnClickListener(new OnClickListener() {
@@ -69,7 +74,7 @@ public class ToDoManagerActivity extends ListActivity {
         });
 
         // Attach the adapter to this ListActivity's ListView
-        getListView().setAdapter(mToDoListAdapter);
+        mListView.setAdapter(mToDoListAdapter);
     }
 
     @Override
