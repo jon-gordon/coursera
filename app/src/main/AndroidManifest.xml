@@ -54,6 +54,9 @@
         <activity android:name=".PMAAHS1.Week4.UI.ToDoManagerActivity" />
         <activity android:name=".PMAAHS1.Week4.UI.AddToDoItemActivity" />
 
+        <activity android:name=".PMAAHS1.Week4.ModernArt.ModernArtActivity" />
+
+
     </application>
 
 </manifest>
