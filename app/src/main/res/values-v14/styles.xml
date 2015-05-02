@@ -10,4 +10,8 @@
         <!-- API 14 theme customizations can go here. -->
     </style>
 
+    <!-- Settings activity action bar styles -->
+    <style name="ActionBar.V14.Sunshine.NoTitle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/modern_art_blue</item>
+    </style>
 </resources>

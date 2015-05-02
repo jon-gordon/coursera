@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/modern_art_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modern_art_info"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modern_art_explain"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modern_art_link"
+            android:id="@+id/modern_art_visit_button"
+            android:textColor="@android:color/white"
+            android:background="@color/modern_art_blue"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modern_art_cancel"
+            android:id="@+id/modern_art_cancel_button"
+            android:textColor="@android:color/white"
+            android:background="@color/modern_art_blue"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

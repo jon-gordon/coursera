@@ -21,6 +21,7 @@
         <activity android:name=".PMAAHS1.Week2.ActivityOne" />
         <activity android:name=".PMAAHS1.Week2.ActivityTwo" />
 
+
         <activity android:name=".PMAAHS1.Week3.Intents.ActivityLoaderActivity" />
         <activity android:name=".PMAAHS1.Week3.Intents.ExplicitlyLoadedActivity" />
         <activity android:name=".PMAAHS1.Week3.Intents.MyBrowserActivity">
@@ -54,7 +55,12 @@
         <activity android:name=".PMAAHS1.Week4.UI.ToDoManagerActivity" />
         <activity android:name=".PMAAHS1.Week4.UI.AddToDoItemActivity" />
 
-        <activity android:name=".PMAAHS1.Week4.ModernArt.ModernArtActivity" />
+        <activity android:name=".PMAAHS1.Week4.ModernArt.ModernArtActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
     </application>

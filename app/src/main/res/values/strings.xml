@@ -58,4 +58,10 @@
     <string name="submit_string">Submit</string>
     <string name="enter_title_string">Enter Title</string>
 
+    <!-- Week 4 - Modern Art -->
+    <string name="modern_art_info">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson.</string>
+    <string name="modern_art_explain">Click below to learn more!</string>
+    <string name="modern_art_link">Visit MOMA</string>
+    <string name="modern_art_cancel">Not Now</string>
+
 </resources>
